@@ -5,18 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Art gallery website</title>
 </head>
 <body>
+  <div class="wrapper">
+    <header class="hero">
+      <div class="hero__image">
+        <picture>
+          <source srcset="images/desktop/image-hero.jpg, images/desktop/image-hero@2x.jpg media (min-width: 1024px)">
+          <source srcset="images/tablet/image-hero.jpg, images/tablet/image-hero@2x.jpg media (min-width: 550px)">
+          <img src="images/mobile/image-hero.jpg" srcset="images/mobile/image-hero.jpg, images/mobile/image-hero@2x.jpg 2x" alt="two museum visitors looking at a giant black and white portrait of an older lady" />
+        </picture>
+      </div>
 
-  Modern Art Gallery
+      <div class="hero__info">
+        <h1 class="hero__heading">Modern <br>Art Gallery</h1>
+        <p class="hero__paragraph">The arts in the collection of the Modern Art Gallery all started 
+          from a spark of inspiration. Will these pieces inspire you? Visit 
+          us and find out.</p>
+          <a href="#location.html"><button class="btn">
+            <div class="btn__header">Our location</div>
+          </button></a>
+      </div>
+    </header>
 
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
+    <main>
+      <section class="gallery">
+        <div class="gallery__image gallery__image--1">
+          <picture>
+            <source srcset="images/desktop/image-grid-1.jpg, images/desktop/image-grid-1@2x.jpg 2x" media="(min-width: 1024px)"
+            <source srcset="images/tablet/image-grid-1.jpg, images/tablet/image-grid-1@2x.jpg 2x" media="(min-width: 550px)"
+            <img src="images/mobile/image-grid-1.jpg" srcset="images/mobile/image-grid-1.jpg 1x, images/mobile/image-grid-1@2x.jpg 2x" alt="A view of the exhibition space with various abstract artworks on the wall." />
+          </picture>
+        </div>
 
-  Our location
+      </section>
+    </main>
+  </div>
+
+  
+
+  
+
+  
 
   Your day at the gallery
 
